@@ -1,4 +1,4 @@
-// Copyright © 2016 Roberto De Sousa (https://github.com/rodesousa) / Patrick Tavares (https://github.com/ptavares)
+// Copyright © 2016 Roberto De Sousa (https://github.com/ptavares) / Patrick Tavares (https://github.com/ptavares)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,16 +17,17 @@ package controller
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/rodesousa/luz-lantern/engine"
-	log "github.com/rodesousa/luz-lantern/logger"
-	"github.com/rodesousa/luz-lantern/mapper"
-	"github.com/rodesousa/luz-lantern/shard"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"net/http"
 	"os"
 	"os/exec"
 	"strconv"
+
+	"github.com/ptavares/luz-lantern/engine"
+	log "github.com/ptavares/luz-lantern/logger"
+	"github.com/ptavares/luz-lantern/mapper"
+	"github.com/ptavares/luz-lantern/shard"
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 var RootCmd = &cobra.Command{
@@ -46,7 +47,7 @@ luz-lantern is a tool program used to test/check environments from development t
 Please check down for help.
 
 Copyright © 2016
-Roberto De Sousa (https://github.com/rodesousa)
+Roberto De Sousa (https://github.com/ptavares)
 Patrick Tavares (https://github.com/ptavares)
 `,
 }

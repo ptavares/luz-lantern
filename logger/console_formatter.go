@@ -18,14 +18,18 @@ package logger
 import (
 	"bytes"
 	"fmt"
-	"github.com/logrus"
+	"time"
+
+	"github.com/Sirupsen/logrus"
 )
+
+const defaultTimestampFormat = time.RFC3339
 
 type ConsoleFormatter struct{}
 
 func (f ConsoleFormatter) Format(entry *logrus.Entry) ([]byte, error) {
 	b := &bytes.Buffer{}
-	f.appendKeyValue(b, "time", entry.Time.Format(logrus.DefaultTimestampFormat))
+	f.appendKeyValue(b, "time", entry.Time.Format(defaultTimestampFormat))
 	fmt.Fprintf(b, "[%s] ", entry.Level)
 
 	if entry.Message != "" {

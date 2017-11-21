@@ -1,9 +1,10 @@
 package logger
 
 import (
-	log "github.com/logrus"
 	"io"
 	"os"
+
+	log "github.com/Sirupsen/logrus"
 )
 
 // all Logger's type

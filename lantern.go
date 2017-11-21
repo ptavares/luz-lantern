@@ -14,7 +14,7 @@
 
 package main
 
-import "github.com/rodesousa/luz-lantern/controller"
+import "github.com/ptavares/luz-lantern/controller"
 
 func main() {
 	controller.Execute()

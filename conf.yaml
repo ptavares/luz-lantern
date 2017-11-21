@@ -23,6 +23,3 @@ cmd:
     - curl:
         url: "http://www.google.fr"
         name: "google"
-
-    - plop:
-        lala: a

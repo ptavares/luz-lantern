@@ -1,4 +1,4 @@
-// Copyright © 2016 Roberto De Sousa (https://github.com/rodesousa) / Patrick Tavares (https://github.com/ptavares)
+// Copyright © 2016 Roberto De Sousa (https://github.com/ptavares) / Patrick Tavares (https://github.com/ptavares)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 package mapper
 
 import (
-	"github.com/rodesousa/luz-lantern/shard"
+	"github.com/ptavares/luz-lantern/shard"
 )
 
 func PatternMatching(key string, value shard.ShardArguments) (error, shard.Shard) {
